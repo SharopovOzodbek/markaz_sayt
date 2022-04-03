@@ -1,13 +1,114 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" href="../static/css/card.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cace.buxdu.uz</title>
 </head>
 <body>
-    Salom
+  <div class="container">
+    <div class="top-header">
+      <div class="logo-section"><a href="home.html">Karyera Markazi</a></div>
+      <div class="senter-section">
+        <img src="../static/tizimlar/bsu.png" alt="">
+        <img src="../static/tizimlar/cacebsuru.png" alt="">
+        <img src="../static/tizimlar/tempus.png" alt="">
+        <img src="../static/tizimlar/uniwork.png" alt="">
+      </div>
+      <div class="right-section" style="display: flex;">
+       <span> <i class="fa-solid fa-phone"></i>  +998934786881</span>
+        <div class="languages" >
+          <form action="" method=""><input type="hidden" name="csrfmiddlewaretoken" value="3VGftVWaPvT4UM4iyoDsywIcGxnRynhC5zMsaYoYMB7DdFPHwhgfb3yFxnKujbvp">
+              <i class="fa-solid fa-globe" style="color: #3181ff"></i>
+              <input name="next" type="hidden" value="">
+              <select name="language">
+                       <option value="uz" selected="">
+                            O'zbek
+                         </option>              
+                       <option value="ru">
+                            Русский
+                         </option>                             
+                       <option value="en">
+                            English
+                         </option>
+                    
+              </select>
+          </form>
+      </div>
+      </div>
+    </div>
+    <nav class="animenu" role="navigation" aria-label="Menu">
+      <button class="animenu__btn" type="button">
+        <span class="animenu__btn__bar"></span>
+        <span class="animenu__btn__bar"></span>
+        <span class="animenu__btn__bar"></span>
+      </button>
     
+      <ul class="animenu__nav" style="background-color: #3181ff;">
+        <li ><a style="color: white;" href="#">Biz Haqimizda</a></li>
+        <li>
+          <a style="color: white;" href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Talabalar va Bitiruvchilarga</a>
+          <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
+            <li><a style="color: white;" href="#" role="menuitem">Rezyume Jo'natish</a></li>
+            <li><a style="color: white;" href="#" role="menuitem">Karyera uchun maslahat</a></li>
+            <li><a style="color: white;" href="#" role="menuitem">Rezyume Namunasi</a></li>
+            <li><a style="color: white;" href="#" role="menuitem">Muvafaqiyatli rezyume sirlari</a></li>
+            <li><a style="color: white;" href="#" role="menuitem">mehnatga oid munosabatlat</a></li>
+            <li><a style="color: white;" href="#" role="menuitem">BuxDU tamomlargandavlar organlari rahbarlari</a></li>
+          </ul>
+        </li>
+        <li>
+          <a style="color: white;" href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Ish Beruvchilarga</a>
+          <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
+            <li><a href="#" role="menuitem">Buyurtmalar</a></li>
+            <!-- <li><a href="#" role="menuitem">Sub Item 2</a></li>
+            <li><a href="#" role="menuitem">Sub Item 3</a></li> -->
+          </ul>
+        </li>
+        <li><a style="color: white;" href="#">Yangiliklar va Voqealar</a></li>
+        <li><a style="color: white;" href="#">Galareya</a></li>
+      </ul>
+   </nav>
+
+    <div class="news-section">
+      <!-- <div class="grid">
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2250&amp;q=80" alt="Snowy Mountains">
+            <div class="card__content">
+              <h1 class="card__header">A starry night</h1>
+              <p class="card__text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
+              <button class="card__btn">Explore <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2250&amp;q=80" alt="Desert">
+            <div class="card__content">
+              <h1 class="card__header">Misty mornings</h1>
+              <p class="card__text">Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.</p>
+              <button class="card__btn">Explore <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="grid__item">
+          <div class="card"><img class="card__img" src="https://images.unsplash.com/photo-1506318164473-2dfd3ede3623?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=3300&amp;q=80" alt="Canyons">
+            <div class="card__content">
+              <h1 class="card__header">Utah sunsets</h1>
+              <p class="card__text">Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much more than incredible.</p>
+              <button class="card__btn">Explore <span>&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+    
+   <script src="../static/js/nav.js"></script>
 </body>
 </html>
